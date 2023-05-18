@@ -1,0 +1,30 @@
+@import 'styles/variables';
+
+.card {
+  display: flex;
+  align-items: center;
+
+  &__avatarWrapper {
+    margin-right: 12px;
+  }
+
+  &__textWrapper {
+  }
+
+  &__name {
+    color: $color-black;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+
+  &__position {
+    margin-top: -1px;
+    letter-spacing: 0.01em;
+    color: $color-text-position;
+    font-size: 12px;
+  }
+  // перекинути в хедер
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+}

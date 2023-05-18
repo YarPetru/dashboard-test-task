@@ -1,0 +1,189 @@
+@import 'styles/variables';
+
+.table {
+  margin-top: 51px;
+  padding: 30px 40px 40px 38px;
+  width: 968px;
+  height: 812px;
+
+  background-color: $color-white;
+  border-radius: $border-radius-30;
+  box-shadow: $shadow-sidebar;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 720px;
+    padding: 20px 24px 44px 24px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 21px;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    width: 640px;
+    padding: 20px 24px 44px 24px;
+    box-shadow: none;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: $color-black;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 16px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 7px;
+    color: $color-text-accent;
+    letter-spacing: -0.01em;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 4px;
+    }
+  }
+
+  &__search {
+    position: relative;
+
+    margin-top: 14px;
+    margin-right: 13px;
+
+    width: 216px;
+    height: 38px;
+
+    @media only screen and (max-width: $bp-large) {
+      margin-right: 0px;
+      margin-top: 0px;
+      width: 31%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 56%;
+    }
+  }
+
+  &__searchInput {
+    padding: 10px 10px 10px 40px;
+    width: 100%;
+
+    font-family: inherit;
+    font-size: 12px;
+    letter-spacing: -0.01em;
+    color: $color-text-primary;
+    background-color: $color-background-input;
+    border: none;
+    outline: none;
+    border-radius: $border-radius-10;
+
+    &::placeholder {
+      color: $color-text-secondary;
+    }
+  }
+
+  &__data {
+    margin-top: 40px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 32px;
+    }
+  }
+
+  &__headerRow {
+    position: relative;
+    color: $color-text-secondary;
+    font-weight: 500;
+  }
+
+  &__headerRow > &__cell:last-child {
+    text-align: right;
+  }
+  &__headerRow > &__cell:last-child > span {
+    margin-right: 23px;
+  }
+
+  &__row > &__cell:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__headerRow::after {
+    position: absolute;
+    bottom: 0;
+    left: -38px;
+
+    content: '';
+    width: 968px;
+    height: 1px;
+    color: $color-border-table;
+    background-color: $color-border-table;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 720px;
+      left: -25px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 640px;
+    }
+  }
+
+  &__headerRow &__cell {
+    padding-bottom: 14px;
+  }
+
+  &__row {
+    height: 69px;
+    border-bottom: 1px solid $color-border-table;
+  }
+
+  &__cell {
+    font-weight: 500;
+    height: 29px;
+  }
+
+  &__row &__cell {
+    padding: 20px 0;
+  }
+
+  &__footer {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & p {
+      font-weight: 500;
+      color: $color-text-secondary;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__noResultsText {
+    font-weight: 500;
+    color: $color-text-secondary;
+  }
+}
+
+.searchIcon {
+  position: absolute;
+  left: 8px;
+  top: 7px;
+}

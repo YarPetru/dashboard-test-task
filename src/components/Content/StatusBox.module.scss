@@ -1,0 +1,25 @@
+@import 'styles/variables';
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4px 12px;
+  height: 29px;
+  width: 84px;
+  border: 1px solid red;
+  border-radius: $border-radius-4;
+}
+
+.activeBox {
+  color: $color-text-active;
+  border-color: $color-text-active;
+  background-color: $color-background-active;
+}
+
+.inactiveBox {
+  color: $color-text-inactive;
+  border-color: $color-text-inactive;
+  background-color: $color-background-inactive;
+}

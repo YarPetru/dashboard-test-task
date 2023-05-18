@@ -1,0 +1,17 @@
+@import 'styles/variables';
+
+.content {
+  padding: 41px 95px 41px 71px;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 41px 20px 41px 20px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 21px 20px 21px 20px;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 21px 0px 21px 0px;
+  }
+}

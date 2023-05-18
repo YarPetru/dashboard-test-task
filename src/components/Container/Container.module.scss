@@ -1,0 +1,26 @@
+@import 'styles/variables';
+
+.container {
+  margin: 0 auto;
+  width: 1440px;
+
+  display: flex;
+  // height: 100vh;
+  // height: 1198px;
+  // text-align: center;
+  background-color: $color-background-primary;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 1024px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 768px;
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    width: 640px;
+    background-color: $color-white;
+  }
+}
