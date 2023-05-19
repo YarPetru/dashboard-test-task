@@ -8,9 +8,6 @@
     margin-right: 12px;
   }
 
-  &__textWrapper {
-  }
-
   &__name {
     color: $color-black;
     font-weight: 500;
@@ -23,8 +20,8 @@
     color: $color-text-position;
     font-size: 12px;
   }
-  // перекинути в хедер
-  @media only screen and (max-width: $bp-medium) {
-    display: none;
-  }
+  // // перекинути в хедер
+  // @media only screen and (max-width: $bp-medium) {
+  //   display: none;
+  // }
 }

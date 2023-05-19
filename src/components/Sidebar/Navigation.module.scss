@@ -2,6 +2,12 @@
 @import 'styles/animations';
 
 .navigation {
+  &__headingWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__heading:link,
   &__heading:visited {
     display: flex;

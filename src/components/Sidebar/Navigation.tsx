@@ -1,6 +1,9 @@
 import React from 'react';
 
+import useMatchMedia from 'hooks/use-match-media';
+
 import Title from './Title';
+import UserCard from './UserCard';
 import { ReactComponent as Logo } from 'images/svg/logo.svg';
 import { ReactComponent as Chevron } from 'images/svg/chevron-right.svg';
 import { ReactComponent as DashboardIcon } from 'images/svg/key-square.svg';
@@ -13,12 +16,17 @@ import { ReactComponent as HelpIcon } from 'images/svg/message-question.svg';
 import s from './Navigation.module.scss';
 
 const Navigation: React.FC = () => {
+  const { isMobile, isTabletMedium, isTabletLarge } = useMatchMedia();
+
   return (
     <nav className={s.navigation}>
-      <a href="/" className={s.navigation__heading}>
-        <Logo />
-        <Title />
-      </a>
+      <div className={s.navigation__headingWrapper}>
+        <a href="/" className={s.navigation__heading}>
+          <Logo />
+          <Title />
+        </a>
+        {(isMobile || isTabletMedium) && <UserCard />}
+      </div>
       <ul className={s.navigation__list}>
         <li className={s.navigation__item}>
           <a href="/" className={s.navigation__link}>
