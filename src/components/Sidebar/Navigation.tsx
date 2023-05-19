@@ -16,7 +16,7 @@ import { ReactComponent as HelpIcon } from 'images/svg/message-question.svg';
 import s from './Navigation.module.scss';
 
 const Navigation: React.FC = () => {
-  const { isMobile, isTabletMedium, isTabletLarge } = useMatchMedia();
+  const { isMobile, isTabletMedium } = useMatchMedia();
 
   return (
     <nav className={s.navigation}>
