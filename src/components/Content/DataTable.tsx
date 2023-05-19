@@ -21,7 +21,9 @@ const DataTable: React.FC = () => {
       <td className={s.table__cell}>{customer.name}</td>
       <td className={s.table__cell}>{customer.company}</td>
       <td className={s.table__cell}>{customer.phoneNumber}</td>
-      <td className={s.table__cell}>{customer.email}</td>
+      <td width="207" className={s.table__cell}>
+        {customer.email}
+      </td>
       <td className={s.table__cell}>{customer.country}</td>
       <td className={s.table__cell}>
         <StatusBox isActive={customer.isActive} />
