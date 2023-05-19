@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dashboard-test-task/static/css/main.46ce554f.css",
-    "main.js": "/dashboard-test-task/static/js/main.b16efcc6.js",
+    "main.css": "/dashboard-test-task/static/css/main.f34bf50d.css",
+    "main.js": "/dashboard-test-task/static/js/main.ff8fb7aa.js",
     "static/media/avatar.png": "/dashboard-test-task/static/media/avatar.cc992c57d71a45eb6470.png",
     "static/media/discount-shape.svg": "/dashboard-test-task/static/media/discount-shape.d8c13354406face47e4883a0d3e17729.svg",
     "static/media/wallet-money.svg": "/dashboard-test-task/static/media/wallet-money.0fdaa0e77396718343fe55d6ae4f3c49.svg",
@@ -13,11 +13,11 @@
     "index.html": "/dashboard-test-task/index.html",
     "static/media/search.svg": "/dashboard-test-task/static/media/search.d555a35800fec6f7c1928aef95546ef7.svg",
     "static/media/chevron-right.svg": "/dashboard-test-task/static/media/chevron-right.a65db8957eb9c8231a9c92d4ef8ee49b.svg",
-    "main.46ce554f.css.map": "/dashboard-test-task/static/css/main.46ce554f.css.map",
-    "main.b16efcc6.js.map": "/dashboard-test-task/static/js/main.b16efcc6.js.map"
+    "main.f34bf50d.css.map": "/dashboard-test-task/static/css/main.f34bf50d.css.map",
+    "main.ff8fb7aa.js.map": "/dashboard-test-task/static/js/main.ff8fb7aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.46ce554f.css",
-    "static/js/main.b16efcc6.js"
+    "static/css/main.f34bf50d.css",
+    "static/js/main.ff8fb7aa.js"
   ]
 }
